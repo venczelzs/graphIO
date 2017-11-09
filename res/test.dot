@@ -1,0 +1,5 @@
+    // The graph name and the semicolons are optional
+graph name { // comment
+  a -- b -- c;
+  b -- d;
+}
