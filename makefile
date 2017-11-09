@@ -6,6 +6,7 @@ SRC = src
 all: prepare test clean
 
 prepare:
+	mkdir -p bin obj
 	touch bin/*
 	rm bin/*
 
