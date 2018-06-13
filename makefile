@@ -1,7 +1,8 @@
 
-BIN = bin
-OBJ = obj
-SRC = src
+BIN= bin
+OBJ= obj
+SRC= src
+INC= include
 
 all: prepare test clean
 
@@ -17,10 +18,10 @@ $(BIN)/gio: $(OBJ)/main.o $(OBJ)/graphs.o
 	g++ $^ -o $@
 
 $(OBJ)/main.o: $(SRC)/main.cpp
-	g++ -c $< -o $@
+	g++ -I $(INC) -c $< -o $@
 
 $(OBJ)/graphs.o: $(SRC)/graphs.cpp
-	g++ -c $< -o $@
+	g++ -I $(INC) -c $< -o $@
 
 clean:
 	rm obj/*

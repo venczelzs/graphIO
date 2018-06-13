@@ -9,6 +9,8 @@
 
 #include "matrix.hpp"
 
+using namespace Matrices;
+
 using uint = unsigned int;
 
 class Graph
@@ -117,7 +119,7 @@ class Graph
 	if (comment_pos != -1)                // before the comment.
 	  line = line.substr(0, comment_pos); //
 
-	std::string ws = " \t\n\v\f\r";       // white space characters
+	std::string const ws = " \t\n\v\f\r";       // white space characters
 	
 	if (line.find_first_not_of(ws) == -1) // If the line only has white space
 	  continue;                           // skip it.
