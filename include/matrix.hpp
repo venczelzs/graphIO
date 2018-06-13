@@ -5,7 +5,7 @@
 #include <vector>
 #include <cmath>
 
-namespace Matrices {
+namespace Matrica {
 
   template<typename T> class Matrix
   {

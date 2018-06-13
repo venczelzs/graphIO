@@ -33,3 +33,9 @@
 
 # Emacs backup files
 *~
+
+bin/*
+obj/*
+
+tests/bin/*
+tests/obj/*

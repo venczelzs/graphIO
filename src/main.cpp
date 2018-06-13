@@ -11,6 +11,8 @@
 
 using uint = unsigned int;
 
+using namespace Matrica;
+
 int main()
 {
   std::string filename { "res/test.dot" };

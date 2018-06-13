@@ -9,7 +9,7 @@
 
 #include "matrix.hpp"
 
-using namespace Matrices;
+using namespace Matrica;
 
 using uint = unsigned int;
 
